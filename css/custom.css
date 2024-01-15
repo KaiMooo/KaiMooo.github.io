@@ -1,8 +1,9 @@
 :root {
-  --trans-light: rgba(255, 255, 255, 0.5);
-  --trans-dark: rgba(25, 25, 25, 0.5);
+  --trans-light: rgba(255, 252, 252, 0.6);
+  --trans-dark: rgba(22, 22, 22, 0.75);
   --border-style: 1px solid #c5b5ae;
-  --backdrop-filter: blur(5px) saturate(150%);
+  --backdrop-filter: blur(10px) saturate(100%);
+  --backdrop-filter2: blur(5px) saturate(100%); /*仅主页头图*/
 }
 
 /* 页脚与头图半透明 */
@@ -11,19 +12,19 @@
     0,
     0,
     0,
-    0.2
-  ) !important; /* 这里设为黑色并20%透明度，根据实际情况调整颜色 */
+    0.25
+  ) !important; /* 这里设为黑色并10%透明度，根据实际情况调整颜色 */
 }
 #page-header {
-  background: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(255, 255, 255, 0) !important;
 }
 
 /* 白天模式遮罩半透明 */
 #footer::before {
-  background: rgba(0, 0, 0, 0.1) !important; /* 同样设为20%透明度 */
+  background: rgba(0, 0, 0, 0.1) !important; /* 同样设为10%透明度 */
 }
 #page-header::before {
-  background: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 
 /* 夜间模式遮罩半透明 */
@@ -46,6 +47,7 @@
   display: flex !important;
 }
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(7) .menus_item_child,
 .menus_items .menus_item:nth-child(5) .menus_item_child {
   left: -125px;
 }
@@ -203,6 +205,21 @@ div#archive {
 [data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(0, 0, 0, 0.7) !important;
 }
+/* 为头图添加模糊效果 */
+#page-header.full_page.fixed::before {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: var(--backdrop-filter2);
+}
+/* 非首页头图添加模糊效果 */
+#page-header.not-home-page {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* 为页脚添加模糊效果 */
+#footer {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: var(--backdrop-filter);
+}
 
 /* 夜间模式遮罩 */
 [data-theme="dark"] #recent-posts > .recent-post-item,
@@ -238,6 +255,7 @@ div#archive {
   background: rgba(25, 25, 25, 0.9) !important;
   color: #ffffff;
 }
+
 /* 翻页按钮居中 */
 #pagination {
   width: 100%;
