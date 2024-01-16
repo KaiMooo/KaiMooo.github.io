@@ -121,17 +121,6 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -144,21 +133,21 @@
     
     <entry>
       <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe {  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: 100;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <title>games</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
       
-        <content type="html"><![CDATA[var now = new Date();function createtime() {  // 当前时间  now.setTime(now.getTime() + 1000);  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间  var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒  var unit = (dis / 149600000).toFixed(6); // 天文单位  var grt = new Date("01/11/2024 00:00:00"); // 网站诞生时间  var days = (now - grt) / 1e3 / 60 / 60 / 24,    dnum = Math.floor(days),    hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,    hnum = Math.floor(hours);  1 == String(hnum).length && (hnum = "0" + hnum);  var minutes = (now - grt) / 1e3 / 60 - 1440 * dnum - 60 * hnum,    mnum = Math.floor(minutes);  1 == String(mnum).length && (mnum = "0" + mnum);  var seconds = (now - grt) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,    snum = Math.round(seconds);  1 == String(snum).length && (snum = "0" + snum);  let currentTimeHtml = "";  (currentTimeHtml =    hnum < 18 && hnum >= 9      ? `<img class='boardsign' src='https://sourcebucket.s3.bitiful.net/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`      : `<img class='boardsign' src='https://sourcebucket.s3.bitiful.net/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),    document.getElementById("workboard") &&      (document.getElementById("workboard").innerHTML = currentTimeHtml);}// 设置重复执行函数，周期1000mssetInterval(() => {  createtime();}, 1000);]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -176,9 +165,20 @@
     
     
     <entry>
-      <title>games</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
+      <title></title>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -199,10 +199,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe {  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: 100;}]]></content>
+        <content type="html"><![CDATA[var now = new Date();function createtime() {  // 当前时间  now.setTime(now.getTime() + 1000);  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间  var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒  var unit = (dis / 149600000).toFixed(6); // 天文单位  var grt = new Date("01/11/2024 00:00:00"); // 网站诞生时间  var days = (now - grt) / 1e3 / 60 / 60 / 24,    dnum = Math.floor(days),    hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,    hnum = Math.floor(hours);  1 == String(hnum).length && (hnum = "0" + hnum);  var minutes = (now - grt) / 1e3 / 60 - 1440 * dnum - 60 * hnum,    mnum = Math.floor(minutes);  1 == String(mnum).length && (mnum = "0" + mnum);  var seconds = (now - grt) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,    snum = Math.round(seconds);  1 == String(snum).length && (snum = "0" + snum);  let currentTimeHtml = "";  (currentTimeHtml =    hnum < 18 && hnum >= 9      ? `<img class='boardsign' src='https://sourcebucket.s3.bitiful.net/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`      : `<img class='boardsign' src='https://sourcebucket.s3.bitiful.net/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),    document.getElementById("workboard") &&      (document.getElementById("workboard").innerHTML = currentTimeHtml);}// 设置重复执行函数，周期1000mssetInterval(() => {  createtime();}, 1000);]]></content>
       
     </entry>
     
@@ -212,28 +212,6 @@
       <title>link</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>movies</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于本人</title>
-      <link href="/me/index.html"/>
-      <url>/me/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -253,11 +231,33 @@
     
     
     <entry>
-      <title>photos</title>
-      <link href="/photos/index.html"/>
-      <url>/photos/index.html</url>
+      <title>关于本人</title>
+      <link href="/me/index.html"/>
+      <url>/me/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/default_cover_61.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">封面专区</div>  <p>本站用作文章封面的图片</p>  <a href='/photos/photo'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/dm11.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">背景专区</div>  <p>收藏的一些的背景与壁纸</p>  <a href='/photos/wallpaper'></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>movies</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>webphotos</title>
+      <link href="/webphotos.md/webphotos.html"/>
+      <url>/webphotos.md/webphotos.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -275,20 +275,20 @@
     
     
     <entry>
-      <title>关于本站</title>
-      <link href="/web/index.html"/>
-      <url>/web/index.html</url>
+      <title>photos</title>
+      <link href="/photos/index.html"/>
+      <url>/photos/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/default_cover_61.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">封面专区</div>  <p>本站用作文章封面的图片</p>  <a href='/photos/photo'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/dm11.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">背景专区</div>  <p>收藏的一些的背景与壁纸</p>  <a href='/photos/wallpaper'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>webphotos</title>
-      <link href="/webphotos.md/webphotos.html"/>
-      <url>/webphotos.md/webphotos.html</url>
+      <title>关于本站</title>
+      <link href="/web/index.html"/>
+      <url>/web/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
