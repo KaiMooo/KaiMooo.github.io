@@ -1,9 +1,9 @@
 :root {
-  --trans-light: rgba(255, 252, 252, 0.6);
+  --trans-light: rgba(252, 245, 245, 0.7);
   --trans-dark: rgba(22, 22, 22, 0.75);
-  --border-style: 1px solid #c5b5ae;
-  --backdrop-filter: blur(10px) saturate(100%);
-  --backdrop-filter2: blur(5px) saturate(100%); /*仅主页头图*/
+  --border-style: 1px solid rgba(63, 63, 63, 0.25);
+  --backdrop-filter: blur(8px) saturate(100%);
+  --backdrop-filter2: blur(4px) saturate(100%); /*仅主页头图*/
 }
 
 /* 页脚与头图半透明 */
@@ -12,11 +12,11 @@
     0,
     0,
     0,
-    0.25
+    0.1
   ) !important; /* 这里设为黑色并10%透明度，根据实际情况调整颜色 */
 }
 #page-header {
-  background: rgba(255, 255, 255, 0) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
 }
 
 /* 白天模式遮罩半透明 */
@@ -205,9 +205,13 @@ div#archive {
 [data-theme="dark"] #page-header.nav-fixed #nav {
   background: rgba(0, 0, 0, 0.7) !important;
 }
-/* 为头图添加模糊效果 */
+/* 为头图添加模糊效果 
 #page-header.full_page.fixed::before {
   background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: var(--backdrop-filter2);
+}*/
+#page-header.full_page.fixed::before {
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: var(--backdrop-filter2);
 }
 /* 非首页头图添加模糊效果 */
