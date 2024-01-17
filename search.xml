@@ -143,28 +143,6 @@
     
     
     <entry>
-      <title>games</title>
-      <link href="/games/index.html"/>
-      <url>/games/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/universe.css"/>
       <url>/css/universe.css</url>
@@ -176,22 +154,11 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title></title>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/header.js"/>
-      <url>/js/header.js</url>
-      
-        <content type="html"><![CDATA[window.addEventListener("scroll", function () {  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  let headerRect = document    .querySelector("#page-header.full_page.fixed")    .getBoundingClientRect();  // 根据滚动位置计算模糊值并应用  let headerHeight = headerRect.height;  let blurValue = Math.min((scrollTop / headerHeight) * maxBlur, maxBlur);  document.documentElement.style.setProperty("--blur-value", `${blurValue}px`);});]]></content>
       
     </entry>
     
@@ -220,9 +187,53 @@
     
     
     <entry>
+      <title>games</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/header.js"/>
+      <url>/js/header.js</url>
+      
+        <content type="html"><![CDATA[window.addEventListener("scroll", function () {  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  let headerRect = document    .querySelector("#page-header.full_page.fixed")    .getBoundingClientRect();  // 根据滚动位置计算模糊值并应用  let headerHeight = headerRect.height;  let blurValue = Math.min((scrollTop / headerHeight) * maxBlur, maxBlur);  document.documentElement.style.setProperty("--blur-value", `${blurValue}px`);});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于本人</title>
       <link href="/me/index.html"/>
       <url>/me/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>music</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -242,11 +253,11 @@
     
     
     <entry>
-      <title>music</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>photos</title>
+      <link href="/photos/index.html"/>
+      <url>/photos/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/default_cover_61.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">封面专区</div>  <p>本站用作文章封面的图片</p>  <a href='/photos/photo'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/dm11.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">背景专区</div>  <p>收藏的一些的背景与壁纸</p>  <a href='/photos/wallpaper'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -280,17 +291,6 @@
       <url>/webphotos.md/webphotos.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>photos</title>
-      <link href="/photos/index.html"/>
-      <url>/photos/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="gallery-group-main"><figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/default_cover_61.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">封面专区</div>  <p>本站用作文章封面的图片</p>  <a href='/photos/photo'></a>  </figcaption>  </figure>  <figure class="gallery-group">  <img class="gallery-group-img no-lightbox" src='https://source.fomal.cc/img/dm11.webp' alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">背景专区</div>  <p>收藏的一些的背景与壁纸</p>  <a href='/photos/wallpaper'></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
