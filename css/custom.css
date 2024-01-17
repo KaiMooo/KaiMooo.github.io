@@ -212,7 +212,7 @@ div#archive {
 }*/
 #page-header.full_page.fixed::before {
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: var(--backdrop-filter2);
+  /*backdrop-filter: var(--backdrop-filter2);*/
 }
 /* 非首页头图添加模糊效果 */
 #page-header.not-home-page {
