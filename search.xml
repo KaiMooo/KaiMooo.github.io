@@ -121,11 +121,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe {  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: 100;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -154,17 +154,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/js/header.js"/>
-      <url>/js/header.js</url>
-      
-        <content type="html"><![CDATA[window.addEventListener("scroll", function () {  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  let headerRect = document    .querySelector("#page-header.full_page.fixed")    .getBoundingClientRect();  // 根据滚动位置计算模糊值并应用  let headerHeight = headerRect.height;  let blurValue = Math.min((scrollTop / headerHeight) * maxBlur, maxBlur);  document.documentElement.style.setProperty("--blur-value", `${blurValue}px`);});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>games</title>
       <link href="/games/index.html"/>
       <url>/games/index.html</url>
@@ -176,11 +165,22 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/js/header.js"/>
+      <url>/js/header.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[window.addEventListener("scroll", function () {  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  let headerRect = document    .querySelector("#page-header.full_page.fixed")    .getBoundingClientRect();  // 根据滚动位置计算模糊值并应用  let headerHeight = headerRect.height;  let blurValue = Math.min((scrollTop / headerHeight) * maxBlur, maxBlur);  document.documentElement.style.setProperty("--blur-value", `${blurValue}px`);});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
+      
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe {  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: 100;}]]></content>
       
     </entry>
     
@@ -209,9 +209,9 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>关于本人</title>
+      <link href="/me/index.html"/>
+      <url>/me/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -231,9 +231,9 @@
     
     
     <entry>
-      <title>music</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -242,9 +242,9 @@
     
     
     <entry>
-      <title>关于本人</title>
-      <link href="/me/index.html"/>
-      <url>/me/index.html</url>
+      <title>music</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -297,22 +297,22 @@
     
     
     <entry>
-      <title>photo</title>
-      <link href="/photos/photo/index.html"/>
-      <url>/photos/photo/index.html</url>
+      <title>wallpaper</title>
+      <link href="/photos/wallpaper/index.html"/>
+      <url>/photos/wallpaper/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://photo-bed.vercel.app/img/p2.png","alt":""},{"url":"https://photo-bed.vercel.app/img/p1.png","alt":""},{"url":"https://photo-bed.vercel.app/img/p4.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p5.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p6.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p7.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p8.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p9.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p10.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p3.png","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>wallpaper</title>
-      <link href="/photos/wallpaper/index.html"/>
-      <url>/photos/wallpaper/index.html</url>
+      <title>photo</title>
+      <link href="/photos/photo/index.html"/>
+      <url>/photos/photo/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="gallery-container" data-type="data" data-button="">      <div class="gallery-data">[{"url":"https://photo-bed.vercel.app/img/p2.png","alt":""},{"url":"https://photo-bed.vercel.app/img/p1.png","alt":""},{"url":"https://photo-bed.vercel.app/img/p4.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p5.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p6.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p7.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p8.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p9.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p10.jpg","alt":""},{"url":"https://photo-bed.vercel.app/img/p3.png","alt":""}]</div>      <div class="gallery-items">      </div>    </div>]]></content>
       
     </entry>
     
